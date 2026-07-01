@@ -1,0 +1,45 @@
+capabilities:
+  emails.list:
+    owner: operations_team
+    risk: medium
+    approval_required: false
+    justification_required: false
+    logging_required: true
+    compliance_scope: []
+
+  emails.get:
+    owner: operations_team
+    risk: high
+    approval_required: false
+    justification_required: false
+    logging_required: true
+    compliance_scope:
+      - pii
+
+  cdv.get_transaction:
+    owner: payments
+    risk: high
+    approval_required: false
+    justification_required: false
+    logging_required: true
+    compliance_scope:
+      - pci
+
+  cdv.detokenize:
+    owner: compliance_team
+    risk: critical
+    approval_required: true
+    justification_required: true
+    logging_required: true
+    compliance_scope:
+      - pci
+
+  webhook.post:
+    owner: operations_team
+    risk: high
+    approval_required: true
+    justification_required: true
+    logging_required: true
+    compliance_scope:
+      - pci
+

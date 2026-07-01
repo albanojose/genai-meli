@@ -1,0 +1,19 @@
+policies:
+  critical_capabilities:
+    approval_required: true
+    justification_required: true
+    audit_logging_required: true
+
+  detokenization:
+    allowed_roles:
+      - fraud_manager
+      - dispute_specialist
+    require_human_approval: true
+
+  output_controls:
+    mask_pan: true
+    mask_secrets: true
+
+  prompt_injection:
+    detect_suspicious_patterns: true
+    isolate_email_content: true

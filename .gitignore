@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+*.log
+
+# Local/editor artifacts
+.claude/
+.kiro/
+.streamlit/
+
+# Content not needed for the core app repo
+arquivos/
+demo/
+docs/
+presentation/
+study/
+cola.md
+live.md
+study
+tests
+!presentation/v7.pptx
